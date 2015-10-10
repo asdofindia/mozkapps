@@ -169,7 +169,7 @@
     font-size: 20px;
 }
 
-.post-list {
+.app-list {
     margin-left: 0;
     list-style: none;
 
@@ -178,12 +178,12 @@
     }
 }
 
-.post-meta {
+.app-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
 
-.post-link {
+.app-link {
     display: block;
     font-size: 24px;
 }
@@ -191,13 +191,13 @@
 
 
 /**
- * Posts
+ * apps
  */
-.post-header {
+.app-header {
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
+.app-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
@@ -207,7 +207,7 @@
     }
 }
 
-.post-content {
+.app-content {
     margin-bottom: $spacing-unit;
 
     h2 {

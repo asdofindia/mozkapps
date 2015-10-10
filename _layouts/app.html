@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="app">
+
+  <header class="app-header">
+    <h1 class="app-name">{{ page.name }}</h1>
+    <p class="app-meta">{{ page.categories }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="app-content">
+    {{ content }}
+  </article>
+
+</div>
