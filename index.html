@@ -1,20 +1,27 @@
 ---
-layout: default
+layout: home
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Apps</h1>
-
-  <ul class="app-list">
+  <!-- <h1 class="page-heading">Apps</h1> -->
+  <div class="button-group filter-button-group">
+      <button data-filter="*">show all</button>
+      <button data-filter=".utilities">utilities</button>
+      <button data-filter=".games">games</button>
+  </div>
+  <div class="app-list">
     {% for app in site.posts %}
-      <li>
+      <div class="app {{ app.categories }}">
         <h2>
           <a class="app-link" href="{{ app.url | prepend: site.baseurl }}">{{ app.name }}</a>
         </h2>
-      </li>
+        <p>
+            {{ app.excerpt }}
+        </p>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

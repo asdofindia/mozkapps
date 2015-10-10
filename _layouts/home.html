@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{{ content }}
+<script src="{{ "/js/jquery-2.1.4.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/isotope.pkgd.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+    var $grid = $('.app-list').isotope({
+        itemSelector: '.app',
+        layoutMode: 'fitRows'
+    });
+    $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+</script>
