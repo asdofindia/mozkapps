@@ -11,6 +11,9 @@ layout: default
   <article class="app-content">
     {{ content }}
     <a href="https://marketplace.firefox.com/app/{{ page.id | split:"/" | last }}/">View on marketplace</a>
+    <h2>More info</h2>
+    Author: <span id="author"></span><br>
+    Size: <span id="size"></span>
   </article>
 
 </div>
