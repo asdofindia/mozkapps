@@ -1,10 +1,12 @@
 ---
 layout: default
+scripts: [jquery-2.1.4.min.js,fetch.js]
 ---
 <div class="app">
 
   <header class="app-header">
     <h1 class="app-name">{{ page.name }}</h1>
+    <h1 id="app-name" hidden="">{{ page.id | split:"/" | last }}</h1>
     <p class="app-meta">{{ page.categories }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
