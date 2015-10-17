@@ -5,6 +5,7 @@ scripts: [jquery-2.1.4.min.js,fetch.js]
 <div class="app">
 
   <header class="app-header">
+    <div id="icon"></div>
     <h1 class="app-name">{{ page.name }}</h1>
     <h1 id="app-name" hidden="">{{ page.id | split:"/" | last }}</h1>
     <p class="app-meta">{{ page.categories }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
@@ -15,7 +16,7 @@ scripts: [jquery-2.1.4.min.js,fetch.js]
     <a href="https://marketplace.firefox.com/app/{{ page.id | split:"/" | last }}/">View on marketplace</a>
     <h2>More info</h2>
     Author: <span id="author"></span><br>
-    Size: <span id="size"></span>
+    Size: <span id="size"></span><span id="sizedesc"></span>
   </article>
 
 </div>
