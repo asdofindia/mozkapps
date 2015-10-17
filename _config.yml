@@ -3,7 +3,7 @@ title: Mozilla Kerala Firefox OS Apps Showcase
 email: hello@mozillakerala.org
 description: > # this means to ignore newlines until "baseurl:"
   Mozilla Kerala App Showcase Portal is a carefully curated collection of apps that were incubated under the love of Mozilla Kerala
-baseurl: "/mozkapps" # the subpath of your site, e.g. /blog/
+baseurl: "/mozkapps/" # the subpath of your site, e.g. /blog/
 url: "http://mozillakerala.org" # the base hostname & protocol for your site
 twitter_username: mozillakerala
 github_username:  mozillakerala
