@@ -17,7 +17,7 @@
 
     {% if page.scripts %}
     {% for script in page.scripts %}
-    <script src="/js/{{ script | prepend: site.baseurl  }}" charset="utf-8"></script>
+    <script src="{{ site.baseurl }}/js/{{ script }}" charset="utf-8"></script>
     {% endfor %}
     {% endif %}
 
