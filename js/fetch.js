@@ -38,10 +38,13 @@ $( document ).ready(function() {
       if(xmlHttp.readyState == 4){
         if(xmlHttp.status == 200 ){
           var arr = JSON.parse(xmlHttp.responseText);
+          //arr.descriptions[en-US];
           fs = convert (arr.file_size);
+          document.getElementById("icon").innerHTML = "<img src=" + arr.icons[64] + ">";
           document.getElementById("author").innerHTML = (arr.author);
           document.getElementById("size").innerHTML = (fs).toFixed(2);
-          document.getElementById("icon").innerHTML = "<img src=" + arr.icons[64] + ">";
+          //document.getElementById("desc").innerHTML = (arr.description[en-US]);
+
 
           //document.getElementById("data").innerHTML = (arr.computedString);
         }else {
